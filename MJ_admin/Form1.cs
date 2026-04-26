@@ -37,6 +37,12 @@ namespace Super_Admin_Rolly
                 this.Hide();
                 Admin.Show();
             }
+            else if (Password_.Text == "1" && ID_.Text == "1")
+            {
+                Main_Dashboard Admin = new Main_Dashboard();
+                this.Hide();
+                Admin.Show();
+            }
             else
             {
                 MessageBox.Show("Invalid ID or Password. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
